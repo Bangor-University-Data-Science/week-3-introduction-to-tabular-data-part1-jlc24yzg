@@ -1,3 +1,4 @@
+import pandas as pd
 def get_numerical_df(df, numerical_features):
     """
     Creates a DataFrame containing only numerical features.
@@ -9,4 +10,8 @@ def get_numerical_df(df, numerical_features):
     Returns:
         pd.DataFrame: DataFrame containing only numerical features.
     """
+    numerical_df = df[ numerical_features ].copy()
+
+    return numerical_df
+    
     pass  # Implement the logic here
